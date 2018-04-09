@@ -1,15 +1,15 @@
 {
-  "name": "@source4society/yourcomponentname",
+  "name": "@source4society/react-scepter-web-components",
   "version": "1.0.0",
-  "description": "Add your description here",
-  "main": "lib/index.js",
-  "repository": "https://github.com/source4societyorg/yourrepository.git",
+  "description": "A set of common components implemented on web-based react, useful for injecting into a wrapper for platform independent implementations.",
+  "main": "lib/View.js",
+  "repository": "https://github.com/source4societyorg/react-scepter-web-components.git",
   "author": "Source 4 Society",
   "license": "AGPL-3.0",
   "private": false,
   "scripts": {
     "test": "eslint ./src/*.js ./tests/*.js && jest --coverage",
-    "build": "babel src/index.js --minified --out-file lib/index.js",
+    "build": "babel src/View.js --minified --out-file lib/View.js && babel src/ActivityIndicator.js --minified --out-file lib/ActivityIndicator.js && babel src/Button.js --minified --out-file lib/Button.js && babel src/Div.js --minified --out-file lib/Div.js && babel src/Header.js --minified --out-file lib/Header.js && babel src/Image.js --minified --out-file lib/Image.js && babel src/Paragraph.js --minified --out-file lib/Paragraph.js",
     "prepublish": "npm run build"
   },
   "jest": {
@@ -41,6 +41,7 @@
     "testRegex": "tests/.*\\.test\\.js$"
   },
   "dependencies": {
+    "@source4society/react-loadingindicator-component": "^1.0.0",
     "@source4society/scepter-utility-lib": "^1.1.0",
     "immutable": "3.8.1",
     "moment": "^2.20.1",
@@ -49,7 +50,8 @@
     "react-router-dom": "4.1.1",
     "react-test-renderer": "15.6.1",
     "redux-saga": "^0.16.0",
-    "reselect": "3.0.1"
+    "reselect": "3.0.1",
+    "styled-components": "^3.2.5"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",

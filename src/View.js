@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-const WebView = ({ children }) => <section>{children}</section>;
+const WebView = ({ children, className }) => <section className={className}>{children}</section>;
 WebView.propTypes = {
   children: PropTypes.any,
+  className: PropTypes.string,
 };
-WebView.defaultProps = {};
+WebView.defaultProps = {
+  className: '',
+};
 export default WebView;

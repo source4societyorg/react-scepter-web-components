@@ -7,12 +7,14 @@ test('propTypes are defined properly', () => {
   expect(WebHeader.propTypes).toEqual({
     children: PropTypes.any,
     type: PropTypes.string,
+    className: PropTypes.string,
   });
 });
 
 test('defaultProps are defined properly', () => {
   expect(WebHeader.defaultProps).toEqual({
     type: 'h1',
+    className: '',
   });
 });
 

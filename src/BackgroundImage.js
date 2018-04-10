@@ -11,6 +11,8 @@ const WebBackgroundImage = styled(WebDiv)`
   background-attachment: ${(props) => props.backgroundAttachment};
   background-origin: ${(props) => props.backgroundOrigin};
   background-clip: ${(props) => props.backgroundClip};
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
 `;
 
 WebBackgroundImage.propTypes = {
@@ -24,6 +26,8 @@ WebBackgroundImage.propTypes = {
   backgroundOrigin: PropTypes.string,
   backgroundClip: PropTypes.string,
   sourceUrl: PropTypes.bool,
+  width: PropTypes.string,
+  height: PropTypes.string,
 };
 WebBackgroundImage.defaultProps = {
   className: '',
@@ -34,6 +38,8 @@ WebBackgroundImage.defaultProps = {
   backgroundAttachment: 'scroll',
   backgroundOrigin: 'padding-box',
   backgroundClip: 'border-box',
+  width: '100%',
+  height: '100%',
   sourceUrl: true,
 };
 

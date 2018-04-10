@@ -15,6 +15,8 @@ test('propTypes are defined properly', () => {
     backgroundOrigin: PropTypes.string,
     backgroundClip: PropTypes.string,
     sourceUrl: PropTypes.bool,
+    width: PropTypes.string,
+    height: PropTypes.string,
   });
 });
 
@@ -28,6 +30,8 @@ test('defaultProps are defined properly', () => {
     backgroundAttachment: 'scroll',
     backgroundOrigin: 'padding-box',
     backgroundClip: 'border-box',
+    width: '100%',
+    height: '100%',
     sourceUrl: true,
   });
 });

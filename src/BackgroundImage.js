@@ -4,13 +4,13 @@ import WebDiv from './Div';
 
 const WebBackgroundImage = styled(WebDiv)`
   background-image: ${(props) => props.sourceUrl ? `url('${props.source}')` : `'${props.sourceUrl}'`};
-  background-size: '${(props) => props.backgroundSize}';
-  background-color: '${(props) => props.backgroundColor}';
-  background-position: '${(props) => props.backgroundPosition}';
-  background-repeat: '${(props) => props.backgroundRepeat}';
-  background-attachment: '${(props) => props.backgroundAttachment}';
-  background-origin: '${(props) => props.backgroundOrigin}';
-  background-clip: '${(props) => props.backgroundClip}';
+  background-size: ${(props) => props.backgroundSize};
+  background-color: ${(props) => props.backgroundColor};
+  background-position: ${(props) => props.backgroundPosition};
+  background-repeat: ${(props) => props.backgroundRepeat};
+  background-attachment: ${(props) => props.backgroundAttachment};
+  background-origin: ${(props) => props.backgroundOrigin};
+  background-clip: ${(props) => props.backgroundClip};
 `;
 
 WebBackgroundImage.propTypes = {

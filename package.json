@@ -1,6 +1,6 @@
 {
   "name": "@source4society/react-scepter-web-components",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A set of common components implemented on web-based react, useful for injecting into a wrapper for platform independent implementations.",
   "main": "lib/View.js",
   "repository": "https://github.com/source4societyorg/react-scepter-web-components.git",
@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "test": "eslint ./src/*.js ./tests/*.js && jest --coverage",
-    "build": "babel src/BackgroundImage.js --minified --out-file lib/BackgroundImage.js && babel src/View.js --minified --out-file lib/View.js && babel src/ActivityIndicator.js --minified --out-file lib/ActivityIndicator.js && babel src/Button.js --minified --out-file lib/Button.js && babel src/Div.js --minified --out-file lib/Div.js && babel src/Header.js --minified --out-file lib/Header.js && babel src/Image.js --minified --out-file lib/Image.js && babel src/Paragraph.js --minified --out-file lib/Paragraph.js",
+    "build": "babel src/BackgroundImage.js --minified --out-file lib/BackgroundImage.js && babel src/View.js --minified --out-file lib/View.js && babel src/ActivityIndicator.js --minified --out-file lib/ActivityIndicator.js && babel src/Button.js --minified --out-file lib/Button.js && babel src/Div.js --minified --out-file lib/Div.js && babel src/Header.js --minified --out-file lib/Header.js && babel src/Image.js --minified --out-file lib/Image.js && babel src/Paragraph.js --minified --out-file lib/Paragraph.js && babel src/Form.js --minified --out-file lib/Form.js",
     "prepublish": "npm run build"
   },
   "jest": {

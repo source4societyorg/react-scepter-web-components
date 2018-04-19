@@ -2,18 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 export const WebHeader = ({ children, className, type, ...rest }) => {
-  let element;
+  let HTag;
   switch (type) {
     case 'h2':
+      HTag = styled.h2``;
+      break;
     case 'h3':
+      HTag = styled.h3``;
+      break;
     case 'h4':
-      element = styled(type);
+      HTag = styled.h4``;
       break;
     default:
-      element = styled.h1``;
+      HTag = styled.h1``;
   }
 
-  return <element className={className} type={type} {...rest}>{children}</element>;
+  return <HTag className={className} type={type} {...rest}>{children}</HTag>;
 };
 WebHeader.propTypes = {
   children: PropTypes.any,

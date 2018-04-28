@@ -1,6 +1,6 @@
 {
   "name": "@source4society/react-scepter-web-components",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "A set of common components implemented on web-based react, useful for injecting into a wrapper for platform independent implementations.",
   "main": "lib/View.js",
   "repository": "https://github.com/source4societyorg/react-scepter-web-components.git",
@@ -41,7 +41,7 @@
     "testRegex": "tests/.*\\.test\\.js$"
   },
   "dependencies": {
-    "@source4society/react-loadingindicator-component": "^1.0.0",
+    "@source4society/react-loadingindicator-component": "^1.1.0",
     "@source4society/scepter-utility-lib": "^1.1.0",
     "immutable": "3.8.1",
     "moment": "^2.20.1",
